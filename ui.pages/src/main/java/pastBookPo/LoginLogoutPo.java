@@ -86,19 +86,6 @@ public class LoginLogoutPo extends BasePO {
         }
     }
 
-
-
-
- /*   public String isdicpFrontPageTitlePresent() throws Exception {
-        try{
-            Log.info("## AdminPortalLoginPo | getdicpFrontPageTitle() ## " + this.getClass().getName());
-            return isElementPresent(dicpFrontPageTitleQA);
-        }
-        catch(NoSuchElementException e){
-            throw new Exception("Failed : getdicpFrontPageTitle()" + e.getLocalizedMessage());
-        }
-    }*/
-
     public void clickSignOut() throws Exception {
         WebElement clickSignOut = singleton.getDriver().findElement(By.xpath("//a[contains(text(),'Sign out')]"));
         try {
